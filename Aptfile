@@ -1,0 +1,24 @@
+# Apt packages installed on Linux by ./install.sh.
+# One package per line. Lines starting with `#` and blank lines are ignored.
+#
+# `glow` comes from Charm's apt repo and `gh` from GitHub's apt repo (both
+# are set up by install.sh before apt-get install). `uv` is not in apt at
+# all and is installed via Astral's curl script in install-binaries.sh.
+# Everything else is in the standard Debian/Ubuntu repos.
+
+stow
+git
+git-delta
+zsh
+vim
+tmux
+htop
+eza
+fzf
+bat
+glow
+gh
+curl
+wget
+ca-certificates
+unzip

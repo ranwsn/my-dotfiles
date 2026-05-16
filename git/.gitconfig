@@ -1,0 +1,28 @@
+[user]
+	name = Your Name
+	email = you@example.com
+[status]
+	showUntrackedFiles = normal
+
+[core]
+    pager = delta
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true  # use n and N to move between diff sections
+
+[help]
+  autocorrect = prompt          # "did you mean `status`?" instead of running blindly
+
+[push]
+  autoSetupRemote = true        # no more "set-upstream" dance on first push
+  followTags = true
+
+[credential "https://github.com"]
+	helper =
+	helper = !gh auth git-credential
+[credential "https://gist.github.com"]
+	helper =
+	helper = !gh auth git-credential
